@@ -2,31 +2,50 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title></title>
   </head>
   <body>
     <header>
-      <nav>
-        <!-- username dropdown goes here -->
+      <nav id="userInfo">
+        Admin Username
       </nav>
       <nav>
+        <ul>
+          <li> Shares </li>
+          <li> Playlists </li>
+          <li> Personal Videos </li>
+        </ul>
+        <img id="siteLogo"> Logo </img>
         <!-- shares, playlists, personal videos, logo -->
       </nav>
     </header>
     <main>
       <h1> Shares </h1>
-      <section>
+      <section id="cardGrid">
         <!-- card grid goes here -->
-        <article>
+        <article class="recipient-card">
           <!-- interior of card -->
-          <div>
+          <div class="recipient-photo">
             <!-- card header, photo, views -->
           </div>
           <div>
+            <h5>Recipient's Namehere</h5>
+            <p class="date-and-time">Monday 01/23/16 10:22am</p>
+            <blockquote>
+              *url blockquote here*
+            </blockquote>
+            <h6>PLAYLIST</h6>
+            <h5>Name of Playlist</h5>
+            <h6>ATTACHMENTS</h6>
+            <h2>04</h2>
             <!-- card body -->
           </div>
         </article>
+
       </section>
     </main>
   </body>
