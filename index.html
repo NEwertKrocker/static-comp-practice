@@ -15,9 +15,9 @@
       </nav>
       <nav>
         <ul>
-          <li> Shares </li>
-          <li> Playlists </li>
-          <li> Personal Videos </li>
+          <li> <img src="src/share-2.svg"> Shares </li>
+          <li> <img src="src/list.svg"> Playlists </li>
+          <li> <img src="src/user.svg"> Personal Videos </li>
         </ul>
         <img id="siteLogo"> Logo </img>
         <!-- shares, playlists, personal videos, logo -->
@@ -26,13 +26,15 @@
     <main>
       <h1> Shares </h1>
       <section id="cardGrid">
-        <!-- card grid goes here -->
         <article class="recipient-card">
-          <!-- interior of card -->
-          <div class="recipient-photo">
-            <!-- card header, photo, views -->
+          <div class="recipient-photo" id="user1Photo">
+            <img src="src/arrow-redo-sharp.svg" class="reply-arrow">
+            <div class="views-counter">
+              <h6 class="views">VIEWS</h6>
+              <h2 class="view-count">02</h2>
+            </div>
           </div>
-          <div>
+          <div class="recipient-info">
             <h5>Recipient's Namehere</h5>
             <p class="date-and-time">Monday 01/23/16 10:22am</p>
             <blockquote>

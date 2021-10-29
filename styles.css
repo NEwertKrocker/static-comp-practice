@@ -1,6 +1,16 @@
 * {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   font-family: 'Open Sans', sans-serif;
+  margin: none;
+}
+
+body {
+    background-color: #efefef;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
 }
 
 nav {
@@ -21,18 +31,30 @@ li {
 main,
 blockquote {
   background-color: #efefef;
+  margin: inherit;
+}
+
+p,
+h5,
+h6,
+h2 {
+  margin: inherit;
+  padding: 0px;
+  color: #555555;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h6 {
   font-size: 12px;
+  margin-bottom: 0px;
 }
 
 h2 {
   color: #36bafa;
+  margin-top: 0px;
 }
 
 blockquote {
@@ -44,6 +66,23 @@ blockquote {
 
 .recipient-card {
   background-color: #ffffff;
+  box-shadow: 3px 3px 3px #999999, 0 6px 10px 0 #999999;
+}
+
+.recipient-photo {
+  min-height: 150px;
+  min-width: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipient-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px 10px;
 }
 
 .date-and-time {
@@ -52,8 +91,47 @@ blockquote {
   font-size: 14px;
 }
 
+.reply-arrow {
+  margin: 10px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  color: gray;
+  border: 10px white;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.views-counter {
+  display: flex;
+  flex-direction: column;
+  margin: none;
+  color: white;
+}
+
+.views,
+.view-count {
+  color: white;
+  font-size: 36px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.view-count {
+  padding: none;
+}
+
+.views {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
 #userInfo {
   justify-content: flex-end;
+}
+
+#user1Photo {
+  background-image: url("src/userphoto1.jpeg");
 }
 
 #siteLogo {
