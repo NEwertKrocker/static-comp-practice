@@ -13,7 +13,7 @@ Turing, Mod 2 - Solo weekend project
   - [Project Specs](#project-specs)
 
 ## Abstract
-	- The goal of this project, done over a weekend, was to practice drafting HTML and CSS from scratch in order to try and match a comp provided in a single image.
+  - The goal of this project, done over a weekend, was to practice drafting HTML and CSS from scratch in order to try and match a comp provided in a single image.
 
 ## Technologies
   - Atom
