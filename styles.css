@@ -2,9 +2,17 @@
   /* border: 2px solid green; */
   font-family: 'Open Sans', sans-serif;
   margin: none;
+  padding: none;
 }
 
-body {
+header {
+  display: block;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
     background-color: #efefef;
 }
 
@@ -17,21 +25,29 @@ nav {
   background-color: #2b2b2b;
   color: #ececec;
   display: flex;
+  padding: 10px;
 }
 
 ul {
   list-style-type: none;
   display: flex;
+  padding: 0px 0px 0px 15px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 li {
   padding: 10px;
+  align-self: center;
 }
 
 main,
 blockquote {
   background-color: #efefef;
-  margin: inherit;
+}
+
+main {
+  padding: 15px;
 }
 
 p,
@@ -64,18 +80,40 @@ blockquote {
   margin: 12px 20px;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
 .recipient-card {
   background-color: #ffffff;
   box-shadow: 3px 3px 3px #999999, 0 6px 10px 0 #999999;
 }
 
 .recipient-photo {
+  position: relative;
   min-height: 150px;
   min-width: 300px;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: space-between;
+}
+
+.recipient-photo::before {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.recipient-name {
+  margin-bottom: 0;
+}
+
+.playlist-name {
+  margin-top: 0;
 }
 
 .recipient-info {
@@ -89,6 +127,7 @@ blockquote {
   font-weight: lighter;
   color: gray;
   font-size: 14px;
+  margin-top: 0;
 }
 
 .reply-arrow {
@@ -100,6 +139,7 @@ blockquote {
   border: 10px white;
   border-radius: 50%;
   background-color: #fff;
+  position: relative;
 }
 
 .views-counter {
@@ -107,6 +147,7 @@ blockquote {
   flex-direction: column;
   margin: none;
   color: white;
+  position: relative;
 }
 
 .views,
@@ -126,12 +167,54 @@ blockquote {
   font-size: 12px;
 }
 
+#siteLogo {
+  height: 40px;
+  width: 150px;
+  padding: 15px;
+  justify: flex-end;
+}
+
 #userInfo {
   justify-content: flex-end;
 }
 
+#userIcon {
+  height: 24px;
+  width: 24px;
+}
+
 #user1Photo {
   background-image: url("src/userphoto1.jpeg");
+}
+
+#user2Photo {
+  background-image: url("src/userphoto2.jpeg");
+  background-position: top;
+}
+
+#user3Photo {
+  background-image: url("src/userphoto3.jpeg");
+}
+
+#user4Photo {
+  background-image: url("src/userphoto4.jpeg");
+}
+
+#user5Photo {
+  background-image: url("src/userphoto5.jpeg");
+}
+
+#user6Photo {
+  background-image: url("src/userphoto6.jpeg");
+  background-position: top;
+}
+
+#user7Photo {
+  background-image: url("src/userphoto7.jpeg");
+}
+
+#user8Photo {
+  background-image: url("src/userphoto8.jpeg");
 }
 
 #siteLogo {
